@@ -52,6 +52,7 @@ struct openai: View {
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
+        // save api key in scheme's environment variables for debug use
         request.setValue("Bearer \(ProcessInfo.processInfo.environment["OPENAI_API_KEY"] ?? "")", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         

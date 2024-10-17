@@ -1,6 +1,8 @@
 # OpenAI and Prompt Engineering
 
 
+## SwiftUI OpenAI API
+![](./images/openai-swift1.png)
 
 ## References
 - [openAI-guide](https://platform.openai.com/docs/overview)

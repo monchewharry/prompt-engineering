@@ -35,6 +35,9 @@ Swift does not have an official OpenAI SDK, so you use native networking tools l
 
 - [openAI-guide](https://platform.openai.com/docs/overview)
 	- [text](https://platform.openai.com/docs/guides/text-generation)
+        - [functioanl calling](https://platform.openai.com/docs/guides/function-calling/function-calling)
+        - [Structured Output](https://platform.openai.com/docs/guides/structured-outputs/structured-outputs)
+        - [token counter and context management](https://cookbook.openai.com/examples/how_to_count_tokens_with_tiktoken)
 	- [image](https://platform.openai.com/docs/guides/images)
 	- [vision](https://platform.openai.com/docs/guides/vision)
 - [Embeddings](https://platform.openai.com/docs/guides/embeddings)

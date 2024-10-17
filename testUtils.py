@@ -1,3 +1,4 @@
+import pickle
 def print_properties(obj, indent=0):
     # Generate indentation for nested properties
     prefix = ' ' * indent
@@ -23,3 +24,10 @@ def print_properties(obj, indent=0):
     # Base case: print the value if it's a simple data type
     else:
         print(f"{prefix}{obj}")
+
+def save_pickle(obj, filename):
+    with open(filename, 'wb') as f:
+        pickle.dump(obj, f)
+def load_pickle(filename):
+    with open(filename, 'rb') as f:
+        return pickle.load(f)

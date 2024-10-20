@@ -1,5 +1,7 @@
 # OpenAI and Prompt Engineering
 
+play with OpenAI's REST API using different SDK or HTTP Requests. Mostly, I will use the Official Python SDK to test all concepts.
+
 ## Python SDK
 
 `from openai import OpenAI`

@@ -2,9 +2,6 @@ import os
 import pickle
 from typing import List, Dict
 import tiktoken
-def saveMessage(content, filename, titlename):
-    with open(filename,"w",encoding='utf-8') as f:
-        f.write(f"{titlename}\n{content}\n")
 
 def num_tokens_from_messages(messages, model="gpt-4o-mini"):
     """Return the number of tokens used by a list of messages."""

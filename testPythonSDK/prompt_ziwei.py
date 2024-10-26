@@ -111,4 +111,10 @@ completion = client.chat.completions.create(
     #max_completion_tokens=200
 )
 
-print(completion.choices[0].message.content)
+responseString = completion.choices[0].message.content
+
+print(responseString)
+
+
+
+

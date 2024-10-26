@@ -2,10 +2,10 @@
 
 play with OpenAI's REST API/LLaMa using different SDK or HTTP Requests. Mostly, I will use the Official Python SDK to test all engineering ideas. And I will design playfully the UI and API state management through SwiftUI projects.
 
-- [OpenAI]()
-- [LLaMA]()
- * [ollama]()
-  * [open-webui]()
+- [MacPaw/OpenAI](https://github.com/MacPaw/OpenAI.git)
+- [LLaMA](https://www.llama.com)
+ * [ollama](https://ollama.com)
+  * [open-webui](https://github.com/open-webui/open-webui.git)
 
 ## Some thoughts 
 

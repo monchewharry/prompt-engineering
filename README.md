@@ -1,6 +1,11 @@
 # OpenAI and Prompt Engineering
 
-play with OpenAI's REST API using different SDK or HTTP Requests. Mostly, I will use the Official Python SDK to test all engineering ideas. And I will design the UI and API state management through SwiftUI projects.
+play with OpenAI's REST API/LLaMa using different SDK or HTTP Requests. Mostly, I will use the Official Python SDK to test all engineering ideas. And I will design playfully the UI and API state management through SwiftUI projects.
+
+- [OpenAI]()
+- [LLaMA]()
+ * [ollama]()
+  * [open-webui]()
 
 ## Some thoughts 
 
@@ -32,13 +37,13 @@ play with OpenAI's REST API using different SDK or HTTP Requests. Mostly, I will
  * Prepare gold-standard labeled data for better LLM prediction accuracy.
 
 
-## Python SDK
+## OpenAI Python SDK
 
 `from openai import OpenAI`
 
 The Python SDK (openai package) abstracts API calls, providing convenient functions like `chat.completions.create` You simply specify parameters, and the SDK handles request setup, error handling, and parsing.
 
-## SwiftUI OpenAI API through HTTP requests
+## SwiftUI HTTP requests
 
 Swift does not have an official OpenAI SDK, so you use native networking tools like `URLSession` to manually set up and send HTTP requests. This requires additional steps to construct the request, add headers, serialize data into JSON, and parse responses manually.
 

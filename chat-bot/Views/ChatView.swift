@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ChatView: View {
     @EnvironmentObject private var viewModel: ChatViewModel
+    @FocusState private var isFocused: Bool
 
     var body: some View {
         VStack {
@@ -24,9 +25,11 @@ struct ChatView: View {
             HStack {
                 TextField("输入问题...", text: $viewModel.currentInput)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .focused($isFocused)
 
                 Button(action: {
                     Task {
+                        isFocused = false
                         await viewModel.sendMessage()
                     }
                 }) {

@@ -12,7 +12,6 @@ play with OpenAI's REST API/LLaMa using different SDK or HTTP Requests. Mostly, 
 (END)
 ```
 
-
 - [MacPaw/OpenAI](https://github.com/MacPaw/OpenAI.git)
 - [LLaMA](https://www.llama.com)
  * [ollama](https://ollama.com)

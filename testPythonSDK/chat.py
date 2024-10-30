@@ -55,7 +55,14 @@ def fetch_openai_response(category: Category, user_question: str) -> str:
             temperature=0.7,
             max_tokens=500
         )
-        return response.choices[0].message.content
+        
+        # Get token usage information
+        completion_tokens = response.usage.completion_tokens
+        prompt_tokens = response.usage.prompt_tokens
+        total_tokens = response.usage.total_tokens
+        
+        answer = response.choices[0].message.content
+        return f"{answer}\n\n[Token Usage: Completion={completion_tokens}, Prompt={prompt_tokens}, Total={total_tokens}]"
     except Exception as e:
         return f"抱歉，获取回答时出现错误: {str(e)}"
 

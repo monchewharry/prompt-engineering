@@ -36,12 +36,15 @@ play with OpenAI's REST API/LLaMa using different SDK or HTTP Requests. Mostly, 
 
 ### about LLM scope
 
-- LLM cannot be relied upon to perform arithmetic or long calculations accurately on their own[1].
- * Given the inference/reasoning capability is still unreliable, if any complex logic is required to derive the pre-result, we should write programs(human reasoning) to offer the pre-result information. For example, given the date of birth, the accurate calculation of lunarCalendar date, BaZi, ZiWei Natal Chart, and fundamental theory/rule of interpretation should be prepared before prompt engineering.
+- Complex Context: LLM cannot be relied upon to perform arithmetic or long calculations accurately on their own[1].
+ * Given the inference/reasoning capability is still unreliable, if any complex logic is required to derive the pre-result, we should write external programs(human reasoning) to offer the pre-result information. For example, given the date of birth, the accurate calculation of lunarCalendar date, BaZi, ZiWei Natal Chart, and fundamental theory/rule of interpretation should be prepared before prompt engineering.
  * For accurate inference-based job, we can only let LLM do the creative part or summarization of large corps of inference result,
  * In a nutshell, all prediction model is always not inference model, we make prediction more accurate to fool people with a spurious inference just like statistical inference.
+- Large Context make LLM lose accuracy.
+ * AI models have token limits, meaning they can only remember a certain amount of text within a single conversation.
 
 ### about LLM development
+
 - Data preparation 
  * LLM is never too big to be specific to some extend.
  * Prepare gold-standard labeled data for better LLM prediction accuracy.
